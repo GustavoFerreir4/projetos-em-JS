@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication table</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        div#interface{
+            margin: 100px;
+        }
+        div#tabuada{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 150px auto;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="interface">
+    <h1>Gerador de tabuadas</h1>
+    <input type="button" value="GERAR TABUADA DO 2" id="button1" onclick="multiplication2()">
+    <input type="button" value="GERAR TABUADA DO 4" id="button2" onclick="multiplication4()">
+</div>
+    <div id="tabuada"></div>
+    <script>
+        var button1 = window.document.querySelector('input#button1')
+        var button2 = window.document.querySelector('input#button2')
+    function multiplication2(){
+        var c = 1
+        var factor = 2
+        var result = window.document.querySelector('div#tabuada')
+        do{
+            result.innerHTML += `<p>${factor} X ${c} = ${factor*c}</p>`
+            c++
+        }while (c <= 10)
+
+    }
+    function multiplication4(){
+        var c = 1
+        var factor = 4
+        var result = window.document.querySelector('div#tabuada')
+        while (c <= 10){
+            result.innerHTML += `<p>${factor} X ${c} = ${factor*c}</p>`
+            c++
+        }
+      }
+      
+    </script>
+</body>
+</html>
