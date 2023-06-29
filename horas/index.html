@@ -19,26 +19,28 @@
     time[1] = time[0].getHours()
     time[2] = window.document.querySelector('div#time-message')
     time[3] = window.document.querySelector('div#picture')
+    time[4] = time[0].getMinutes()
     
-   if (time[1] >= 3 && time[1] < 6){
-        time[2].innerHTML = `Agora são ${time[1]} horas.`
+   if (time[1] >= 0 && time[1] < 6){
+        time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
         time[3].innerHTML = '<img src="media/dawn-picture.jpg">'
         window.document.body.style.backgroundColor = '#5e5941ea'
     }else if (time[1] >= 6 && time[1] < 12){
-        time[2].innerHTML = `Agora são ${time[1]} horas.`
+        time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
         time[3].innerHTML = '<img src="media/morning-picture.jpg">'
         window.document.body.style.backgroundColor = '#ffe09c'
     } else if (time[1] >= 12 && time[1] < 18){
-        time[2].innerHTML = `Agora são ${time[1]} horas.`
+        time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
         time[3].innerHTML = '<img src="media/afternoon-picture.jpg">'
         window.document.body.style.backgroundColor = '#549effe3'
     } else if (time[1] >= 18 && time[1] < 20){
-        time[2].innerHTML = `Agora são ${time[1]} horas.`
+        time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
         time[3].innerHTML = '<img src="media/sunset-picture.jpg">'
-        window.document.body.style.backgroundColor = '#ffb066ea'
-    } else if (time[1] >= 20 && time[1] < 3){
-        time[2].innerHTML = `Agora são ${time[1]} horas.`
-        time[3].innerHTML = '<img src="night-picture.jpg">'
+        window.document.body.style.backgroundColor = '#d88c60e3'
+    } else { 
+        time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
+        time[3].innerHTML = '<img src="media/night-picture.jpg">'
+        window.document.body.style.backgroundColor = '#282842'
     }
 </script> 
 </body>
