@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Dados do usuário</h1>
+    <div id="dados">
+    <div id="age">
+        <label for="birth"> Ano de nascimento:</label>
+        <input type="number" name="birth" id="birth">
+    </div>
+    <div id="sex">
+        <p>Sexo:</p>
+        <input type="radio" name="sex" id="male">
+        <label for="male">Masculino</label>
+        <input type="radio" name="sex" id="female">
+        <label for="female">Feminino</label> 
+        <input type="button" value="confirmar" onclick="verificar()" id="confirm-button">
+    </div>
+    <div id="result">
+       Clique no botão acima para ver o resultado.
+    </div>
+</div>
+</body>
+</html>
