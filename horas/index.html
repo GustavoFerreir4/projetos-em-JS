@@ -12,6 +12,8 @@
         <h1>Que horas são?</h1>
         <div id="time-message"></div>
         <div id="picture"></div>
+        <p>Pressione o botão abaixo para saber o dia da semana:</p>
+        <input type="button" value="Que dia é hoje?" id="button" onclick="DiaSem()">
     </div>
 <script>
     var time = []
@@ -40,8 +42,39 @@
     } else { 
         time[2].innerHTML = `Agora são ${time[1]} horas e ${time[4]} minutos.`
         time[3].innerHTML = '<img src="media/night-picture.jpg">'
-        window.document.body.style.backgroundColor = '#282842'
-    }
+        window.document.body.style.backgroundColor = '#282842'}
+
+        function DiaSem(){
+            var hoje = new Date().getDay()
+            switch (hoje){
+                case 0:
+                    hoje = 'Hoje é domingo.'
+                    break
+                case 1:
+                    hoje = 'Hoje é segunda-feira.'
+                    break
+                case 2:
+                    hoje = 'Hoje é terça-feira.'
+                    break
+                case 3:
+                    hoje = 'Hoje é quarta-feira.'
+                    break
+                case 4:
+                    hoje = 'Hoje é quinta-feira.'
+                    break
+                case 5:
+                    hoje = 'Hoje é sexta-feira.'
+                    break
+                case 6:
+                    hoje = 'Hoje é sábado.'
+                    break
+
+                default:
+                    hoje = 'Não Identificado.'
+                    break
+            }
+            window.alert(hoje)
+        }
 </script> 
 </body>
 </html>
