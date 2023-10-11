@@ -53,9 +53,9 @@ function getWeatherInfo(){
                 <h2>${data.main.temp}°</h2>
                 <p>Máx. ${data.main.temp_max}° - Min. ${data.main.temp_min}°</p>
                 <div id="Humidity-Wind">
-                    <img src="media/humidity.png">
+                    <img src="Media/humidity.png">
                     <p>${data.main.humidity}%</p>
-                    <img src="media/wind.png">
+                    <img src="Media/wind.png">
                     <p>${WindSpeed} Km/h</p>
                 </div>
             </div>
