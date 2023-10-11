@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <h1>Previsão do Tempo</h1>
+    <div id="weather-info"></div>
+
+    <script>
+        // Função para obter a previsão do tempo
+        function getWeather() {
+            const apiKey = 'SEU_API_KEY'; // Substitua pela sua chave de API
+            const city = 'NOME_DA_CIDADE'; // Substitua pelo nome da cidade desejada
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Manipule os dados da previsão aqui
+                    const weatherInfo = document.getElementById('weather-info');
+                    weatherInfo.innerHTML = `
+                        <h2>${data.name}</h2>
+                        <p>Temperatura: ${data.main.temp}°C</p>
+                        <p>Condição: ${data.weather[0].description}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Ocorreu um erro ao obter a previsão do tempo:', error);
+                });
+        }
+
+        // Chame a função para obter a previsão do tempo quando a página for carregada
+        window.onload = getWeather;
+    </script>
+</body>
+</html>
+
+ 
+
+			Vídeo do Front begginers:
+
+	fetch('https://reqres.in/api/users').then((response) => console.log(response))
