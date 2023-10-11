@@ -11,7 +11,7 @@ function getWeatherInfo(){
     var citytxt = window.document.querySelector("input#city-name");
     var city = citytxt.value;
     var apiKey = "f29161e47b016e22aa18cf75b61f5523"
-    const apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br` 
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br` 
     fetch(apiURL)
     .then(response => response.json())
     .then(data => {
