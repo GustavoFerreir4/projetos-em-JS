@@ -35,6 +35,26 @@ function getWeatherInfo(){
             case "nuvens dispersas":
                 CloudPic = "Media/png-clouds-parcialmente-nublado.png"
             break
+            
+            case "chuva leve":
+                CloudPic = "Media/png-clouds-chuvaleve.png" 
+            break
+
+            case "chuva moderada":
+                CloudPic = "Media/png-clouds-chuvaleve.png"
+            break
+
+            case "névoa":
+                CloudPic = "Media/png-clouds-nevoa.png"
+            break
+
+            case "neblina":
+                CloudPic = "Media/png-clouds-nuvensdispersas.png"
+            break
+
+            case "chuviscos":
+                CloudPic = "Media/png-clouds-chuvaleve.png"
+            break
 
             default:
                 CloudPic = "Não Identificado"
@@ -45,10 +65,13 @@ function getWeatherInfo(){
 
         WeatherInfo.innerHTML = `
             <div id="condition">
-                <div id="CloudCondition">
-                    <h1>${city}</h1>
-                    <img src=${CloudPic}>
-                    <p>${Cloud}</p>
+                <div id="City-CountryFlag">
+                    <h1>${data.name}</h1>
+                    <img id="country-flag" src="https://flagsapi.com/${data.sys.country}/flat/64.png">
+                    <div id="CloudCondition">
+                        <img src=${CloudPic}>
+                        <p>${Cloud}</p>
+                    </div>
                 </div>
                 <h2>${data.main.temp}°</h2>
                 <p>Máx. ${data.main.temp_max}° - Min. ${data.main.temp_min}°</p>
@@ -60,7 +83,9 @@ function getWeatherInfo(){
                 </div>
             </div>
         ` 
-    } )
+    } ).catch(error => {
+        console.error('Ocorreu um erro na requisição', error)     
+    })
 }
 
  
