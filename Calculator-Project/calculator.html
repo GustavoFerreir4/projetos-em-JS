@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | DevGusta</title>
+    <link rel="stylesheet" href="calculator.css" class="css">
+
+</head>
+<body class="container">
+    
+    <div id="calculator" class="container">
+
+        <h1>Calculadora</h1>
+
+        <div id="screendisplay">
+
+            
+
+        </div>
+
+        <div id="keyboard" class="container">
+
+            
+            <div id="GitHubAccount"><a href="https://github.com/GustavoFerreir4" target="_blank" title="My Github Profile" ><img src="image/github-account.png" alt="My Github Profile"></a></div>
+            <div class="operator" onclick="cleardisplay()">C</div>
+            <div class="operator" onclick="typeoperator('/')">/</div>
+            <br>
+            <div class="number" onclick="typenumber(7)">7</div>
+            <div class="number" onclick="typenumber(8)">8</div>
+            <div class="number" onclick="typenumber(9)">9</div>
+            <div class="operator" onclick="typeoperator('x')">x</div>
+            <br>
+            <div class="number" onclick="typenumber(4)">4</div>
+            <div class="number" onclick="typenumber(5)">5</div>
+            <div class="number" onclick="typenumber(6)">6</div>
+            <div class="operator" onclick="typeoperator('-')">-</div>
+            <br>    
+            <div class="number" onclick="typenumber(1)">1</div>
+            <div class="number" onclick="typenumber(2)">2</div>
+            <div class="number" onclick="typenumber(3)">3</div>
+            <div class="operator" onclick="typeoperator('+')">+</div>
+            <br>
+            <div class="operator" onclick="changesign()">-/+</div>
+            <div class="number" onclick="typenumber(0)">0</div>
+            <div class="number" id="float_point" onclick="typenumber('.')">.</div>
+            <div class="operator" onclick="calculate()">=</div>
+
+        </div>
+
+    </div>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>

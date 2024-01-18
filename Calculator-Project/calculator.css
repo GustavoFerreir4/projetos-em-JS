@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(10, 9, 9), rgb(92, 6, 6));
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.number, .operator{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width:  65px;
+    height: 50px;
+    font: normal 1.5em arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.number:hover, .operator:hover{
+    background-color: rgba(168, 168, 168, 0.753);
+}
+
+.number:active, .operator:active{
+    width: 60px;
+    height: 45px;
+}
+
+div#calculator{
+    background-color: rgb(0, 41, 54);
+    border-radius: 50px;
+    width: 340px;
+    flex-direction: column;
+    padding: 10px;
+    font-family: arial;
+}
+
+div#keyboard{
+    flex-direction: row;
+    width: 325px;
+    height: 350px;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+div#screendisplay{
+    width: 320px;
+    padding-right: 40px;
+    height: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(39, 61, 70);
+    font: normal 2.8em arial;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+#GitHubAccount{
+    width: 134px;
+}
+#GitHubAccount>a>img{
+    width: 134px;
+    height: 52px;
+    border-radius: 20px;
+}
