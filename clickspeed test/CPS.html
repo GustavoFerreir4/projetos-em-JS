@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClicSpeedTest | DevGust4 </title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } 
+        #display, #clickspeedtest{
+            font: normal 1.3em arial;
+            background-color: white;
+            padding: 10px;
+
+        }
+        #click-box{
+            background-color: rgba(128, 128, 128, 0.788);
+            color: white;
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        #display{
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="container" id="clickspeedtest">
+
+        <h1>Teste seu Clicks Per Second!</h1>
+        <div class="container" id="display">
+            <div id="seconds"></div>
+            <div id="milliseconds"></div>
+        </div>
+
+        <div class="container" id="click-box" onclick="start()">
+            clique aqui
+        </div>
+        <div class="container" id="result">
+
+        </div>
+    </div>
+    <script>
+        var clicks = 0
+        var seconds = 0
+        var milliseconds = 0
+
+        function start(){
+            if(clicks===0){
+                clicks += 1
+                var timer = setInterval(() => {
+                    milliseconds += 10
+                    if (milliseconds===1000){
+                        milliseconds = 0
+                        seconds++
+                    }
+
+                    window.document.querySelector('#seconds').innerHTML = seconds
+                    if (milliseconds===0){
+                        window.document.querySelector('#milliseconds').innerHTML = ""
+                    }else if (milliseconds!==0){
+                    window.document.querySelector('#milliseconds').innerHTML = `.${milliseconds}`
+                    }
+                }, 10);
+
+                setTimeout(()=>{
+                    clearInterval(timer)
+                    console.log("Contagem finalizada " + seconds)
+                    var CPS = clicks/seconds;
+                    window.document.querySelector('#result').innerHTML = `<p>Você fez ${clicks} cliques em 
+                    ${seconds} segundos. <br> O que resultam em ${CPS} cliques por segundo.</p>
+                    <button id="reset" onclick="reset()">Reiniciar</button>`
+
+                }, 5000)
+            }else{
+                clicks += 1
+            }
+        }
+            
+        function reset(){
+            window.document.querySelector('#seconds').innerHTML = ''
+            window.document.querySelector('#milliseconds').innerHTML = ''
+            window.document.querySelector('#result').innerHTML = ''
+            clicks = 0
+            milliseconds = 0
+            seconds = 0
+        }
+       
+    </script>
+</body>
+</html>
