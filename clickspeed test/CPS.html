@@ -37,6 +37,13 @@
         #display{
             flex-direction: row;
         }
+
+        button{
+            margin: 5px;
+            width: 80px;
+            height: 25px;
+            font: normal 0.8em arial;
+        }
     </style>
 </head>
 <body class="container">
@@ -55,6 +62,7 @@
 
         </div>
     </div>
+    <a href="https://github.com/GustavoFerreir4" target="_blank"><img src="github-account.png" alt="Check my GitHub profile!"></a>
     <script>
         var clicks = 0
         var seconds = 0
@@ -71,9 +79,9 @@
                     }
 
                     window.document.querySelector('#seconds').innerHTML = seconds
-                    if (milliseconds===0){
+                    if (milliseconds==0){
                         window.document.querySelector('#milliseconds').innerHTML = ""
-                    }else if (milliseconds!==0){
+                    }else{
                     window.document.querySelector('#milliseconds').innerHTML = `.${milliseconds}`
                     }
                 }, 10);
