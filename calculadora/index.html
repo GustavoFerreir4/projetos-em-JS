@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="calculadora">
+        <div class="display">
+            
+        </div>
+        <div class="keyboard">
+            <div class="key" onclick="limpa()">C</div>
+            <!-- <div class="key">
+                <div onclick="type('par1')">(</div>
+                <div onclick="type('par2')">)</div>
+            </div> -->
+             <div class="key" onclick="type('^')">^</div>
+            <div class="key" onclick="type('%')">%</div>
+            <div class="key" onclick="type('/')">/</div>
+
+            <div class="key" onclick="type(7)">7</div>
+            <div class="key" onclick="type(8)">8</div>
+            <div class="key" onclick="type(9)">9</div>
+            <div class="key" onclick="type('*')">X</div>
+
+            <div class="key" onclick="type(4)">4</div>
+            <div class="key" onclick="type(5)">5</div>
+            <div class="key" onclick="type(6)">6</div>
+            <div class="key" onclick="type('-')">-</div>
+
+            <div class="key" onclick="type(1)">1</div>
+            <div class="key" onclick="type(2)">2</div>
+            <div class="key" onclick="type(3)">3</div>
+            <div class="key" onclick="type('+')">+</div>
+
+            <div class="key" onclick="type('maismenos')">+/-</div>
+            <div class="key" onclick="type(0)">0</div>
+            <div class="key" onclick="type('.')">.</div>
+            <div class="key" onclick="calculate()">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
