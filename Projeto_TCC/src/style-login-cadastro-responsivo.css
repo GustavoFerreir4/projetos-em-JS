@@ -1,0 +1,73 @@
+@media (max-width: 1024px){
+
+    .input {
+        width: 80%;
+        justify-self: center;
+    }
+    #imagem-circuito, #fundo img:nth-child(1) {  
+        width: 25%;
+    }
+
+    #inputs p{
+        margin-left: 12%;
+    }
+
+
+    /* #fundo{
+        width: 80;
+    } */
+
+
+}
+
+
+@media (max-width: 768px){
+    #imagem-circuito, #fundo img:nth-child(1) {  
+        width: 23%;
+    }
+   #logo{
+    position: absolute;
+    left: 5%;
+   }
+
+}
+
+@media (max-width: 425px){
+    #imagem-circuito, #fundo img:nth-child(1) {  
+     display: none;
+    }
+
+    #fundo{
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    #botoes{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    #logo{
+        background-image: url('/imagens/logo/TechFinder-short.png');
+        width: 50px;
+        height: 50px;
+        left: 42%;
+    }
+
+    #menu-botoes{
+        display: flex;
+        position: absolute;
+        right: 8%;
+    }
+
+    #inputs{
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px){
+    
+}
