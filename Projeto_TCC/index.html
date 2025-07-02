@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFinder</title>
+    <link rel="stylesheet" href="src/style-header.css">
+    <link rel="stylesheet" href="src/style-index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="src/style-footer.css">
+    <link rel="stylesheet" href="src/style-catalog.css">
+    <link rel="stylesheet" href="src/style-banner.css">
+    <link rel="stylesheet" href="src/style-responsivo-geral.css">
+
+    
+                                                        <!-- Bebas Neue -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+
+
+</head>
+<body>
+
+    <header>
+        <div id="logo"></div>
+
+        <div id="pesquisa-div">
+            <input type="text" placeholder="Pesquise aqui seu produto"  id="pesquisa">
+            
+        </div>
+        <div id="confirmar">
+            
+        </div>
+
+        <div id="botoes">
+            <a href=""> <div class="botao">Home</div></a> 
+           <a href="aboutus.html"><div class="botao">Sobre Nós</div></a>
+           <a href="login.html" id="botao-login"><div class="botao">Login</div></a>   
+          </div>
+
+        <div id="menu-botoes">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+        
+        <div id="botoes-responsivo" class="hide"> 
+                <a href=""> <div class="botao">Home</div></a> 
+                <a href="aboutus.html"><div class="botao">Sobre Nós</div></a>
+                <a href="login.html"><div class="botao">Login</div></a>  
+        </div>
+    </header>
+    
+    <div class="slider">
+        <div class="slides">
+            <!-- radio buttons -->
+             <input type="radio" name="radio-btn" id="radio1">
+             <input type="radio" name="radio-btn" id="radio2">
+             <input type="radio" name="radio-btn" id="radio3">
+             <!-- fim radio buttons -->
+
+             <!-- slides images -->
+              <div class="slide first">
+                    <img src="imagens/banner/kabum-banner.jpg" alt="Imagem 1">
+              </div>
+              <div class="slide">
+                    <img src="imagens/banner/pichau-banner.jpg" alt="Imagem 2" id="imagem2">
+              </div>
+              <div class="slide">
+                    <img src="imagens/banner/terabyte-banner.jpg" alt="Imagem 3" id="imagem3">
+              </div>
+              <!-- fim slides images -->
+
+              <!-- navigation auto -->
+               <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+               </div>
+
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+    </div>
+    
+    <div id="welcomemsg">
+    </div>
+    
+
+    <p id="mycart"><i class="bi bi-cart2"></i></p>
+    
+    <main>
+        
+        <div id="select-categoria">
+        
+
+        <select name="categoria" id="categoria">
+            <option value="todos">Todos</option>
+            <option value="pc-montado">PC Montado</option>
+            <option value="placa-mae">Placa Mãe</option>
+            <option value="processador">Processador</option>
+            <option value="memoria-ram">Memória RAM</option>
+            <option value="armazenamento">SSD's</option>
+            <option value="gabinete">Gabinetes</option>
+            <option value="fonte">Fontes</option>
+            <option value="placa-de-video">Placas de Vídeo</option>
+        </select>
+
+    </div>
+        
+
+    <div id="catalogo">
+
+        <!-- pc montado -->
+        <div class="item pc-montado"> 
+            <div class="imagem">
+                <img src="imagens/catalogo/pc-montado/gamer1.jpg" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">PC Gamer Mancer Thor III, AMD Ryzen 5 4600G, 16GB DDR4, SSD 480GB</p>
+            <!-- link: https://www.pichau.com.br/computador-mancer-gamer-thor-iii-amd-ryzen-5-4600g-16gb-ddr4-ssd-480gb-36717 -->
+
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$  1.859,98</p>
+                <div class="preco-opcao">
+                    <p class="parcela-txt">(parcelado) R$</p>    
+                    <p class="preco-produto-parcela">2.188,21</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="item memoria">
+            <div class="imagem">
+                <img src="imagens/catalogo/memoria-ram/memoria3.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">Memória RAM Rise Mode Z, 32GB, 3200MHz, DDR4, CL19, Branco - RM-D4-32G-3200ZW</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 459,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">541,16</p></div>
+            </div>
+        </div>
+        <!-- link  -->
+
+        
+        <div class="item armazenamento">
+            <div class="imagem">
+                <img src="imagens/catalogo/armazenamento/ssd4.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">SSD Kingston NV2, 2 TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 3500 MB/s, Gravação: 2800 MB/s, Azul - SNV2S/2000G</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 949,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">949,99</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/380746/ssd-kingston-nv2-2-tb-m-2-2280-pcie-4-0-x4-nvme-leitura-3500-mb-s-gravacao-2800-mb-s-azul-snv2s-2000g?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwG0s7DJsVx7aR326eMJCNuewMzULMvnzTGIKP3WcpkLCIt-tVAOc0aApESEALw_wcB -->
+
+        
+
+        <div class="item pc-montado">
+            <div class="imagem">
+                <img src="imagens/catalogo/pc-montado/gamer3.png" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">PC Gamer Completo Fácil I7, 16GB, GTX 1050TI 4GB, SSD 240GB, Fonte 500W + Monitor 21.5 Polegadas+ Kit Gamer Teclado, Mouse E Headset</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$  1.988,82</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">2.209,80</p></div>
+            </div>
+            <!-- link: https://www.kabum.com.br/produto/271844/pc-gamer-completo-facil-i7-16gb-gtx-1050ti-4gb-ssd-240gb-fonte-500w-monitor-21-5-polegadas-kit-gamer-teclado-mouse-e-headset -->
+        </div>
+    
+
+        <div class="item pc-montado">
+            <div class="imagem">
+                <img src="imagens/catalogo/pc-montado/gamer4.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Computador Blue PC AMD Ryzen 5 5600gt, RAM 8GB, SSD 480GB, DDR4, Vega 7</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.947,18</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">2.163,53</p></div>
+            </div>
+
+            <!-- link video: https://www.kabum.com.br/produto/592466/computador-blue-pc-amd-ryzen-5-5600gt-ram-8gb-ssd-480gb-ddr4-vega-7 -->
+
+        </div>
+
+        
+        <div class="item gabinete">
+            <div class="imagem">
+                <img src="imagens/catalogo/gabinete/gabinete2.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Gabinete Gamer Rise Mode Wave White, Mid Tower, ARGB, ATX, 3 Cooler Fan ARGB, Branco - RM-WA-BW-ARGB</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 188,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">222,34</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/474524/gabinete-gamer-rise-mode-wave-white-mid-tower-argb-atx-3-cooler-fan-argb-branco-rm-wa-bw-argb?utm_id=21437971630&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwDx6TKy1fkOPa0K7COr5CmR8t2sfzL-XvlgygTccDwEJRMEaBwAiAaAiWXEALw_wcB-->
+
+        
+
+        <!-- processador -->
+            
+        <div class="item processador">
+            <div class="imagem">
+                <img src="imagens/catalogo/processador/processador1.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Processador AMD Ryzen 5 4600G, 6-Core, 12-Threads, 3.7GHz (4.2GHz Turbo), Cache 11MB, AM4</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 698,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">822,34</p></div>
+            </div>
+            <!-- link: https://pichau.com.br/processador-amd-ryzen-5-4600g-6-core-12-threads-3-7ghz-4-2ghz-turbo-cache-11mb-am4-100-100000147box -->
+        </div>
+
+        
+        <div class="item cooler">
+            <div class="imagem">
+                <img src="imagens/catalogo/coolers/cooler3.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Water Cooler Cooler Master Masterliquid 360L Core, ARGB, 360MM, AMD e Intel, Preto - MLW-D36M-A18PZ-R1</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 699,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">795,44</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/528790/water-cooler-cooler-master-masterliquid-360l-core-argb-360mm-amd-e-intel-preto-mlw-d36m-a18pz-r1?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnyT91FShQJrcEmRHT4nnv2i3q1S7Kr5aiZwkahQwhFDJpnO89__TXgaAps2EALw_wcB -->
+                
+        <div class="item processador">
+            <div class="imagem">
+                <img src="imagens/catalogo/processador/processador2.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Processador AMD Ryzen 5 5600GT, 6-Core, 12-Threads, 3.6GHz (4.6GHz Turbo), Cache 19MB, AM4</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 847,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">997,64</p></div>
+            </div>
+            <!-- link:   -->
+        </div>
+
+        <div class="item processador">
+            <div class="imagem">
+                <img src="imagens/catalogo/processador/processador3.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Processador AMD Ryzen 7 5700G, 4.6GHz Max Turbo, Cache 20MB, Octa Core, AM4, Ví­deo Integrado</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.103,80</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">1.174,26</p></div>
+            </div>
+            <!-- link: https://www.kabum.com.br/produto/203463/processador-amd-ryzen-7-5700g-4-6ghz-max-turbo-cache-20mb-octa-core-am4-vi-deo-integrado-100-100000263box?utm_id=21434223532&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwKrFivEbSoax5Q4e4-zSPyDQHuuEdgJIyPPo5p4YClx4NcJeO-pjkaAslVEALw_wcB -->
+        </div>
+
+            <div class="item processador">
+            <div class="imagem">
+                <img src="imagens/catalogo/processador/processador4.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Processador AMD Ryzen 9 5900X 3.7GHz (4.8GHz Turbo), 12-Cores 24-Threads, AM4, Sem Cooler</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.999,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">2.352,93</p></div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- placa mae -->
+
+        <div class="item placa-mae">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-mae/placa-mae1.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa Mae Gigabyte B550M Aorus Elite DDR4 Socket AM4</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 849,99 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">999,99 </p></div>
+            </div>
+        </div>
+        <!--link https://www.pichau.com.br/placa-mae-gigabyte-b550m-aorus-elite-ddr4-socket-am4-chipset-amd-b550?gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnz1MdP9Qi_QvPs_dER50Lv50k1kCKaoEr74eyXf67VyUqR157YhtDIaAk7tEALw_wcB-->
+
+        
+        <div class="item placa-mae">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-mae/placa-mae3.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa Mae ASRock B550M Steel Legend DDR4 Socket AM4</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.079,99 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">1.270,58 </p></div>
+            </div>
+        </div>
+        <!-- link https://www.pichau.com.br/placa-mae-asrock-b550m-steel-legend-ddr4-socket-am4-chipset-amd-b550-b550m-steel-legend?gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnz_j0QYfQ6to8X2RaihNM1V9iawjjslClKSwRi51UA6Bm0bd6vQ4YgaAr4bEALw_wcB -->
+
+        <div class="item pc-montado">
+            <div class="imagem">
+                <img src="imagens/catalogo/pc-montado/gamer2.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">PC Home Mancer HM543, AMD Ryzen 5 4600G, 16GB DDR4, SSD 480GB</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.799,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">2.117,64</p></div>
+            </div>
+            <!-- link: https://www.pichau.com.br/computador-mancer-home-hm543-amd-ryzen-5-4600g-16gb-ddr4-ssd-480gb-38896 -->
+        </div>
+
+        
+
+
+        <div class="item cooler">
+            <div class="imagem">
+                <img src="imagens/catalogo/coolers/cooler1.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Cooler Para Processador Mancer Vortex Rainbow RGB, MCR-VOR-01</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 49,99 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">58,81</p></div>
+            </div>
+        </div>
+        <!-- link https://www.pichau.com.br/cooler-para-processador-mancer-vortex-rainbow-rgb-mcr-vor-01?gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnxkD5XlnAn8M_aKQoty6_YG3wMAGQOaEZ6x6p2lzkZCZBke7Yu1c1gaAkopEALw_wcB   -->
+
+        <div class="item cooler">
+            <div class="imagem">
+                <img src="imagens/catalogo/coolers/cooler2.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Air Cooler Rise Mode Gamer G800, RGB, AMD/Intel, 90mm, Preto - RM-AC-O8-RGB</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 64,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">76,46</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/130040/air-cooler-rise-mode-gamer-g800-rgb-amd-intel-90mm-preto-rm-ac-o8-rgb?utm_id=21437971630&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnztLR_b8YOL8adPN9rmClk2eLQ-4w0dXWE3d14AcT4b9cG8KJ3dzdkaAkfIEALw_wcB  -->
+
+
+        <div class="item cooler">
+            <div class="imagem">
+                <img src="imagens/catalogo/coolers/cooler4.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Kit Com 3 Ventoinhas Rise Mode Energy, 120mm, ARGB, Preto - FN-02-RGB-5V</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 79,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">90,90</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/153647/kit-com-3-ventoinhas-rise-mode-energy-120mm-argb-preto-fn-02-rgb-5v?utm_id=21437971630&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnxxrwZQrJPCN-WRqK1tM3DG9HgnMVStlxzl1JKao8tPV3QO5sbW1MgaAlVIEALw_wcB -->
+
+        <div class="item placa-de-video">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-de-video/placa-de-video1.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Amd Radeon Rx 580 8GB GDDR5 256bits - Rage-x Rx580-8GB-gDDR5</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 832,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">849,99</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/596801/amd-radeon-rx-580-8gb-gddr5-256bits-rage-x-rx580-8gb-gddr5 -->
+
+        <!-- gabinete -->
+
+
+        <div class="item gabinete">
+            <div class="imagem">
+                <img src="imagens/catalogo/gabinete/gabinete3.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Gabinete Gamer KBM! GAMING GN210 Mini Tower, M-ATX, Lateral e Frontal em Vidro, Preto - KGGN210PT</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 259,90</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">305,76</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/518736/gabinete-gamer-kbm-gaming-gn210-mini-tower-m-atx-lateral-e-frontal-em-vidro-preto-kggn210pt?utm_id=21416437422&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwKtVfZvxlZ6WTWmpkqO1UjZG2eQ325VhncUVvrOeiRuEXDg4M9coYaAsrXEALw_wcB-->
+
+        <div class="item gabinete">
+            <div class="imagem">
+                <img src="imagens/catalogo/gabinete/gabinete4.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower, Lateral e Frontal em Vidro Temperado, Branco - RM-GA-GG-FW</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 429,90</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">505,76</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/320909/gabinete-gamer-rise-mode-galaxy-glass-mid-tower-lateral-e-frontal-em-vidro-temperado-branco-rm-ga-gg-fw?utm_id=21437971630&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwaHl8TiBcg386r_UgKZMTRaBEpCMkLL8ekY0Rgpo4FFwfxL1W30oAaAhpKEALw_wcB-->
+
+        <!-- fonte -->
+
+        <div class="item fonte">
+            <div class="imagem">
+                <img src="imagens/catalogo/fonte/fonte1.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Fonte Duex DX 500FSE++, 500W, 80 Plus Bronze, Modular, Bivolt, Preto - DX500FSE++</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 199,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">235,28</p></div>
+            </div>
+        </div>
+        <!-- link -->
+
+        <div class="item placa-de-video">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-de-video/placa-de-video2.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa de Video RTX 3050 Stormix Palit NVIDIA GeForce, 6GB GDDR6, DLSS, Ray Tracing, Adaptive Sync - NE63050018JE-1070F</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.049,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">1.235,28</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/534706/placa-de-video-rtx-3050-stormix-palit-nvidia-geforce-6gb-gddr6-dlss-ray-tracing-adaptive-sync-ne63050018je-1070f?utm_id=21416437563&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrBRGXxchUqJ0HvnjY5QUw0p_I6HidYSedq8bqGB5Q_iBnqrjplr8TAaAjKvEALw_wcB -->
+
+        <div class="item fonte">
+            <div class="imagem">
+                <img src="imagens/catalogo/fonte/fonte2.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Fonte Gamer Rise Mode Zeus 550w, Bronze, Full Modular, PFC Ativo, Preto - RM-PSU-01-BZ-550</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 239,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">282,34</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/525053/fonte-gamer-rise-mode-zeus-550w-bronze-full-modular-pfc-ativo-preto-rm-psu-01-bz-550?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnz0tB3It4QDtRGB6VylJa_gKcXCrH8uFNrkHI8LIHpS22RkIgoM1oIaAqEJEALw_wcB-->
+
+        <div class="item fonte">
+            <div class="imagem">
+                <img src="imagens/catalogo/fonte/fonte3.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo, Com Cabo, Preto - 306-7ZP2B22-CE0</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 279,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">318,17</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/369658/fonte-msi-mag-a650bn-650w-80-plus-bronze-pfc-ativo-com-cabo-preto-306-7zp2b22-ce0?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwEcXV_WUJ4ZfYxrgLRDeB5oLMGUKv_F5NpAKWAT1oUeYIP9gvGKzYaAhDkEALw_wcB-->  
+
+        <div class="item placa-mae">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-mae/placa-mae4.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa Mae Gigabyte A520M K V2, DDR4, Socket AMD AM4, M-ATX</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 479,99 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">564,69 </p></div>
+            </div>
+        </div>
+        <!-- link https://www.pichau.com.br/placa-mae-gigabyte-a520m-k-v2-ddr4-socket-amd-am4-m-atx-chipset-amd-a520-a520m-k-v2?gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwZ-KMlc_ZU1YHUby3uYE4Bl_irXMkV9g-WOwXCPn8fJNF-fRq1L10aAvwuEALw_wcB -->
+
+        <div class="item placa-mae">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-mae/placa-mae2.jpg" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa Mae ASRock B450M-HDV R4.0 DDR4 Socket AM4</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 449,99 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">529,40 </p></div>
+            </div>
+        </div>
+        <!--link https://www.pichau.com.br/placa-mae-asrock-b450m-hdv-r4-0-ddr4-socket-am4-chipset-amd-b450?gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwlGS1auXSzqmCkNcJFqzCftvJ8xd1PQ5pQFYThbdEaGOCrhTm4gXQaAuYjEALw_wcB -->
+
+        <div class="item fonte">
+            <div class="imagem">
+                <img src="imagens/catalogo/fonte/fonte4.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Fonte Cooler Master MWE Bronze V2 Full Range, 750W, 80 Plus Bronze, PFC Ativo, sem cabo, Preto - MPE-7501-ACAAW-BBR</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 389,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">458,81</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/465299/fonte-cooler-master-mwe-bronze-v2-full-range-750w-80-plus-bronze-pfc-ativo-sem-cabo-preto-mpe-7501-acaaw-bbr?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzJkay115SPcvJgYypi9Qp4Zs_zHJKuwhYUvwFIMUrkQMs1rRf-cskaAuDjEALw_wcB-->
+
+        <!-- memoria -->
+
+            
+        <div class="item memoria">
+            <div class="imagem">
+                <img src="imagens/catalogo/memoria-ram/memoria1.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">Memória RAM Kingston Fury Beast, 8GB, 3200MHz, DDR4, CL16, Preto - KF432C16BB/8</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 119,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">131,86</p></div>
+            </div>
+        </div>
+        <!-- link  https://www.kabum.com.br/produto/172365/memoria-ram-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnye4HtiL1KBE5CibsC60X_cDWJ_qPOmfOLEMFBibXkF4jHIeB0GLdYaApVkEALw_wcB-->
+        <div class="item armazenamento">
+            <div class="imagem">
+                <img src="imagens/catalogo/armazenamento/ssd3.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">SSD 1 TB Kingston NV2, M.2 2280 PCIe, NVMe, Leitura: 3500 MB/s e Gravação: 2100 MB/s - SNV2S/1000G</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 399,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">470,58</p></div>
+            </div>
+        </div>
+        <!-- link  https://www.kabum.com.br/produto/380745/ssd-1-tb-kingston-nv2-m-2-2280-pcie-nvme-leitura-3500-mb-s-e-gravacao-2100-mb-s-snv2s-1000g?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwdk1BNuZBAxQ7hxTJglFuNnVPZvWWIa3r18HPAYe5Zc3CT6EEwwp4aAqAmEALw_wcB-->
+
+
+        <div class="item placa-de-video">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-de-video/placa-de-video3.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa de Vídeo RTX4060 1-Click OC 2X TecLab Lite GALAX NVIDIA GeForce, 8GB GDDR6, G-SYNC, DLSS, Ray Tracing</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 1.899,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">2.235,28</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/520724/placa-de-video-rtx4060-1-click-oc-2x-teclab-lite-galax-nvidia-geforce-8gb-gddr6-g-sync-dlss-ray-tracing?utm_id=21733851091&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrAy2aAq0IsLQ17ldL3HXx6XF-TpW5LJzaS0G0o1AfY1-yLml4nT-bkaAjS7EALw_wcB -->
+
+
+        <div class="item memoria">
+            <div class="imagem">
+                <img src="imagens/catalogo/memoria-ram/memoria2.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">Memória RAM Rise Mode Z, 16GB, 3200MHz, DDR4, CL19, Preto - RM-D4-16G-3200Z</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 219,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">258,81</p></div>
+            </div>
+        </div>
+        <!-- link  https://www.kabum.com.br/produto/383894/memoria-ram-rise-mode-z-16gb-3200mhz-ddr4-cl19-preto-rm-d4-16g-3200z?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnz8sJJ5YRN36tc15X6t4MFyFh0r6Lm5KmYobqcJJ4_bfxy1FBgtBaAaAjn_EALw_wcB-->
+
+        
+
+        <div class="item memoria">
+            <div class="imagem">
+                <img src="imagens/catalogo/memoria-ram/memoria4.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">Memória RAM Corsair Vengeance RGB, 32GB (2x16GB), 5200MHz, DDR5, CL40, Preto</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 829,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">922,21</p></div>
+            </div>
+        </div>
+        <!-- link  https://www.kabum.com.br/produto/583184/memoria-ram-corsair-vengeance-rgb-32gb-2x16gb-5200mhz-ddr5-cl40-preto-cmh32gx5m2b5200c40?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzZDYlaogVjHUfTbFmNb2wKiUTxb0Ix5r3n-tT6et8hPUBs5fGznf0aAr24EALw_wcB-->
+
+        <!-- armazenamento -->
+
+        <div class="item armazenamento">
+            <div class="imagem">
+                <img src="imagens/catalogo/armazenamento/ssd1.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">SSD Kingston NV2 250 GB, M.2 2280 PCIe, NVMe, Leitura: 3000 MB/s e Gravação: 1300 MB/s - SNV2S/250G</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 219,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">258,81</p></div>
+            </div>
+        </div>
+        <!-- link  https://www.kabum.com.br/produto/380743/ssd-kingston-nv2-250-gb-m-2-2280-pcie-nvme-leitura-3000-mb-s-e-gravacao-1300-mb-s-snv2s-250g?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnxR9crpBTEvlqdSQOJOLpjYZedKc3dXbU8nX4UYUkoAysOHVJY8lQwaAqxSEALw_wcB-->
+
+        <div class="item armazenamento">
+            <div class="imagem">
+                <img src="imagens/catalogo/armazenamento/ssd2.webp" alt="" class="imagem-produto">
+            </div>
+            <p class="nome-produto">SSD Kingston NV2, 500 GB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 3500 MB/s, Gravação: 2100 MB/s, Azul - SNV2S/500G</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 248,99</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">292,93</p></div>
+            </div>
+        </div>
+        <!-- link https://www.kabum.com.br/produto/380744/ssd-kingston-nv2-500-gb-m-2-2280-pcie-4-0-x4-nvme-leitura-3500-mb-s-gravacao-2100-mb-s-azul-snv2s-500g?utm_id=21585251035&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnxiiLOF-_823LPSgb0F5TZaadVV1ZSknYnKeUWZG8v82LVssSJ9qCkaAhTqEALw_wcB -->
+
+        
+        <div class="item gabinete">
+            <div class="imagem">
+                <img src="imagens/catalogo/gabinete/gabinete1.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Gabinete Gamer Rise Mode Z3 Glass, Lateral em Vidro Fumê, Preto - RM-Z03-03-FB</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 159,90 </p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">177,67</p></div>
+            </div>
+        </div>
+        <!-- link https://www.magazineluiza.com.br/gabinete-gamer-rise-mode-z3-glass-lateral-em-vidro-fume-preto-rm-z03-03-fb/p/jk447da211/in/gbgm/?&seller_id=kabum&utm_source=google&utm_medium=cpc&utm_term=76949&utm_campaign=google_eco_per_ven_pla_tc_apo_3p_in&utm_content=&partner_id=76949&gclsrc=aw.ds&gclid=Cj0KCQiA57G5BhDUARIsACgCYnw0ByrLBQpKRWuRv5Sj3-iD9ZYAuRwTeffJP4QDuVjWmeg4bNZXcQgaAuzOEALw_wcB-->
+
+
+        <div class="item placa-de-video">
+            <div class="imagem">
+                <img src="imagens/catalogo/placa-de-video/placa-de-video4.webp" alt="" class="imagem-produto">
+            </div>
+            
+            <p class="nome-produto">Placa de Video PNY GeForce RTX 4080 Super XLR8 Gaming Verto Epic-X RGB OC Edition, 16GB, GDDR6X, 256-bit, VCG4080S16TFXXPB1-O</p>
+            <div class="preco">
+                <p class="preco-produto-vista">(à vista) R$ 6.999,999</p>
+                <div class="preco-opcao"><p class="parcela-txt">(parcelado) R$</p> <p class="preco-produto-parcela">8.235,28</p></div>
+            </div>
+        </div>
+        <!-- link https://www.pichau.com.br/placa-de-video-pny-geforce-rtx-4080-super-xlr8-gaming-verto-epic-x-rgb-oc-edition-16gb-gddr6x-256-bit-vcg4080s16tfxxpb1-o?gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrDyWKrleQ0TPm3L28lZDdyTSWQAnIbVqNqFjsbfKgOftCTA0HOfrCMaAvJBEALw_wcB -->
+
+        
+
+    </div>
+
+
+    <div class="hide" id="meu-carrinho">
+        <h1 id="cart_tittle">MEU CARRINHO</h1>
+        <i id="close">X</i>
+    </div>
+
+    </main>
+    <footer>
+        <div id="autores">
+            <p>Todos os direitos reservados a:</p>
+            <a href=""><div id="gusta" class="author"> Gustavo Ferreira <i class="bi bi-github"></i></div></a>
+           <a href=""><div id="geoh" class="author"> Geovanne Lopes <i class="bi bi-github"></i></div></a> 
+           <p>2024</p>
+        </div>
+
+    </footer>
+
+
+
+ 
+    <script src="src/script-index.js"></script>
+    <script src="src/script-catalogo.js"></script>
+    <script src="src/script-banner.js"></script>
+    <script src="src/script-menu-botoes.js"></script>
+    <script src="src/script-carrinho.js"></script>
+</body>
+</html>
