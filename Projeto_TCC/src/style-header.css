@@ -1,0 +1,82 @@
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#botoes{
+    margin: 45px 0px 0px 200px;
+    display: flex;
+    height: 50px;
+    width: 445px;
+    justify-content: space-between;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    height: 50px;    
+    font-family: Bebas Neue;
+    color: white;
+    font-size: 2em;
+    justify-content: baseline;
+    align-items: center;
+}
+.botao:hover{
+    color: #008000;
+}
+.botao::after{
+    content: "";
+    width: 80px;
+    background-color: #008000;
+    bottom: 7px;
+    height: 3px;
+}
+
+.botao:hover::after{
+    width: 110px;
+    transition: 1s;
+}
+
+#logo{
+    width: 150px;
+    height: 75px;
+    background-image: url('../imagens/logo/TechFinder.png');
+    background-size: cover;
+    /* margin-right: 100px; */
+}
+
+#pesquisa-div{
+    display: flex;
+    width: 600px;
+    height: 35px;
+    border: none;
+    font-family: Bebas Neue;
+    margin: 0px 50px;
+}
+#pesquisa-div input{
+    width: 100%;
+    border-radius: 10px; 
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: rgb(65, 65, 65);
+    margin: 0px 10px 0px 0px;
+}
+
+#confirmar{
+    color: white;
+    font-size: 2em;
+}
+
+#confirmar:hover{
+    color: #008000;
+}
+
+a, ol, ul{
+    text-decoration: none;
+}
+
+

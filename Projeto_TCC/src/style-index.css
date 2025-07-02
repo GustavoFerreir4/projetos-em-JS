@@ -1,0 +1,155 @@
+.hide{
+    display: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+main{
+    background-color: white;
+    justify-content: space-evenly;
+    width: 1450px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}   
+
+#select-categoria{
+    width: 1400px;
+    margin-bottom: 2%;
+}
+
+#categoria{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    font: normal 1.1em sans-serif;
+}
+
+#menu-botoes{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+    flex-direction: column;
+    display: none;
+}
+
+#menu-botoes .linha{
+    width: 40px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#botoes-responsivo{
+    position: absolute;
+    right:  20px;
+    top: 113px;
+    background-color: black;
+    color: white;
+    min-width: 150px;
+    border-radius: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+
+}
+
+#botoes-responsivo a{
+    font: normal max(1vw, 1.1rem) sans-serif;
+}
+
+#botoes-responsivo .botao{
+    width: 200px;
+}
+
+
+#welcomemsg{
+    margin-top: -50px;
+    color: black;
+    font: bolder max(1.6vw, 1.3rem) Bebas Neue;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#mycart{
+    color: black;
+    margin: 0px;
+    font: bolder max(1.6vw, 1.6em) Bebas Neue;
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    font-size:max(3vw, 2.2em);
+    cursor: pointer;
+}
+
+#meu-carrinho{
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    min-width: 350px;
+    min-height: 400px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#cart_tittle{
+    width: 90%;
+    display: block;
+    justify-self: center;
+    font: normal max(1.5vw, 1em) Bebas Neue;
+    
+}
+
+#meu-carrinho .cart_item{
+    display: flex;
+    width: 90%;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+#meu-carrinho img{
+    width: 60px;
+    height: 60px;
+}
+
+#meu-carrinho .cart_item_name{
+    font: normal max(1.1vw, 0.7em) sans-serif;
+    width: 80%;
+    max-width: 550px;
+    min-width: 200px;
+} 
+
+#meu-carrinho .cart_item_price_incash, .cart_item_price_installment{
+    font: normal max(1.1vw, 0.7em) sans-serif;
+}
+
+
+
+#close{
+    top: -30px;
+    right: -30px;
+    font: bolder 2rem courier;
+    color: red;
+    position: absolute;
+    cursor: pointer;
+}
