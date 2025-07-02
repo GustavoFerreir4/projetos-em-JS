@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfinder | Cadastre-se </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="src/style-header.css">
+    <link rel="stylesheet" href="src/style-footer.css">
+    <link rel="stylesheet" href="src/style-register.css">
+    <link rel="stylesheet" href="src/style-login-cadastro-responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+
+        
+        <div id="confirmar">
+            
+        </div>
+
+        <div id="botoes">
+            <a href="index.html"> <div class="botao">Home</div></a> 
+           <a href="aboutus.html"><div class="botao">Sobre Nós</div></a>
+           <a href="login.html"><div class="botao">Login</div></a>   
+          </div>
+
+        <div id="menu-botoes">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+        
+        <div id="botoes-responsivo" class="hide"> 
+                <a href="index.html"> <div class="botao">Home</div></a> 
+                <a href="aboutus.html"><div class="botao">Sobre Nós</div></a>
+                <a href="login.html"><div class="botao">Login</div></a>  
+        </div>
+    </header>
+    <main>
+        <div id="fundo">
+            <img src="imagens/login/circuitos.png" alt="">
+            <img src="imagens/login/circuitos.png" alt="" id="imagem-circuito">
+            <p>Cadastre-se</p>
+            <div id="inputs">
+                <div class="input"><input type="text" placeholder="Nome" id="input_nome"></div>
+                <div class="input"><input type="text" placeholder="Sobrenome" id="input_sobrenome"></div>
+                <div class="input"><input type="text" placeholder="Numero de telefone" id="input_numero"></div>
+                <div class="input"><input type="email" placeholder="Email" id="input_email"></div>
+                <div class="input"><input type="password" placeholder="senha" id="inputsenha"><i class="bi bi-eye-slash" id="olhosenha"></i></div>
+                <div class="input"><input type="password" placeholder="Confirme sua senha" id="inputconfirmar"><i class="bi bi-eye-slash" id="olhoconfirmar"></i></div>
+                <a href="login.html"><p>Ja tem conta? entre aqui!</p></a>
+            </div>
+            <div id="botao">Confirmar</div>
+
+        </div>
+    </main> 
+       <footer>
+        <div id="autores">
+            <p>Todos os direitos reservados a:</p>
+            <a href=""><div id="gusta" class="author"> Gustavo Ferreira <i class="bi bi-github"></i></div></a>
+           <a href=""><div id="geoh" class="author"> Geovanne Lopes <i class="bi bi-github"></i></div></a> 
+           <p>2024</p>
+        </div>
+
+    </footer>
+    <script src="src/script-register.js"></script>
+    <script src="src/script-menu-botoes.js"></script>
+</body>
+</html>

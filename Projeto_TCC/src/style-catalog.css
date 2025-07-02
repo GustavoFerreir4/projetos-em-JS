@@ -1,0 +1,64 @@
+
+#catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 150px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+.item{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    padding: 5px;
+}
+
+
+.item img{ 
+    height: 300px;
+    width: 300px;
+}
+
+.nome-produto{
+    margin: 15px;
+    width: 350px;
+    height: 100px;
+    font: bold 1.2em sans-serif;
+}
+
+
+.preco-produto-vista{
+    width: 350px;
+    margin: 20px;
+    font: bold  max(1.3vw, 0.7rem) sans-serif; 
+    color: green;
+}
+
+.preco-produto-parcela{
+    width: 350px;
+    margin: 20px;
+    font: bold 1.1em sans-serif; 
+    color: black;
+}
+
+.hide{
+    display: none;
+}
+
+.preco-opcao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parcela-txt{
+    text-wrap: nowrap;
+    width: 30vw;
+    min-width: 100px;
+    font: normal max(1.10vw, 1em) sans-serif;
+}

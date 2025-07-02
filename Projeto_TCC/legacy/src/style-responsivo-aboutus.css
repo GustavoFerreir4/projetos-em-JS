@@ -1,0 +1,154 @@
+@media (max-width: 1550px){
+    .img_creators img{
+        width: 250px;
+        height: 250px;
+    }
+
+    main{
+        height: 145vh;
+        margin-bottom: 0%;
+    }
+    
+    #principal{
+        margin-top: 0%;
+        height: 132vh;
+    }
+
+}
+
+@media (max-width: 1350px){
+    .img_creators img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #principal{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px){
+
+    main{
+        height: 165vh;
+    }
+    #techfinder, #creators{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        height: 148vh;
+    }
+
+    #techfinder, #creators{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .img_techfinder img{
+        width: 200px;
+        height: 100px;
+    }
+    
+    .img_techfinder img:not(:first-child){
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px){
+    #botoes{
+        display: none;
+    }
+    main{
+        height: 180vh;
+    }
+
+    #menu-botoes{
+        display: flex;
+    }
+
+    #techfinder, #creators{
+        width: 100%;
+        flex-direction: column;   
+        margin-bottom: 0px;
+    }
+
+    .txt_techfinder, .txt_creators{
+        width: 95%;
+        text-align: justify;
+        align-self: center;
+    }
+
+    #techfinder{
+        height: 551px;
+    }
+
+    #creators{
+        height: 500px;
+        margin-bottom: 200px;
+    }
+
+    .img_creators, .img_techfinder{
+       align-self: center;
+    }
+    
+    /* .img_creators img:not(:first-child){
+        justify-self: center;
+    } */
+
+
+    header{
+        position: relative;
+        justify-content: space-around;
+        height: 110px;
+    }
+}
+@media (max-width: 425px){
+    main{
+        height: 240vh;
+    }
+
+    #techfinder{
+        height: 600px;
+    }
+
+}
+@media (max-width: 375px){
+    main{
+        height: 185vh;
+    }
+
+    .img_creators img{
+        width: 180px;
+        height: 180px;
+    }
+
+    #techfinder{
+        height: 902px;
+        margin-bottom: 0%;
+    }
+
+    .txt_creators p, .txt_techfinder p{
+        font-size: 2.5em;
+    }
+
+    .txt_creators h1, .txt_techfinder h1{
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    main{
+        height: 190vh;
+    }
+    .img_creators img{
+        width: 150px;
+        height: 150px;
+    }
+}
+

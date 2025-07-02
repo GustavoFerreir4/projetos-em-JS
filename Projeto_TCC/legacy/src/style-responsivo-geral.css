@@ -1,0 +1,446 @@
+@media (max-width: 1550px){
+
+    header{
+        height: 90px;
+    }
+
+    
+
+    #botoes{
+        margin-top: 40px;
+        height: 50px;
+        width: 430px;
+        margin: 45px 0px 0px 200px;
+    }
+    .botao{
+        width: 130px;
+        height: 45px;    
+        font-size: 1.7em;
+    }
+
+    .botao::after{
+        width: 70px;
+        bottom: 5px;
+        height: 2.5px;
+    }
+    
+    .botao:hover::after{
+        width: 100px;
+    }
+    
+    #logo{
+        width: 130px;
+        height: 70px;
+    }
+    
+    #pesquisa-div{
+        display: flex;
+        width: 500px;
+        height: 35px;
+        margin: 0px 30px;
+        font-family: Bebas Neue;
+    }
+    #pesquisa-div input{
+        width: 100%;
+        border-radius: 10px; 
+        font-size: 1em;
+        font-family: sans-serif;
+        color: rgb(65, 65, 65);
+        margin: 0px 10px 0px 0px;
+    }
+    
+    #confirmar{
+        font-size: 1.6em;
+    }
+    
+    #catalogo{
+        column-gap: 50px;
+    }
+
+
+    /* Coisa fina: */
+    main{
+        background-color: white;
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }   
+    
+    #select-categoria{
+        width: 1200px;
+    }
+    
+    #categoria{
+        width: 180px;
+        height: 45px;
+        font: normal 1em sans-serif;
+    }
+    
+    
+    .item{
+        height: 380px;
+        width: 240px;
+        padding: 4.5px;
+    }
+
+    .item img{ 
+        height: 240px;
+        width: 240px;
+    }
+
+    .nome-produto{
+        width: 240px;
+        font: bold 1em sans-serif;
+    }
+
+
+    .preco-produto-vista{
+        width: 240px;
+        font: bold 1.3em sans-serif; 
+    }
+
+    .preco-produto-parcela{
+        width: 240px;
+        font: bold 1em sans-serif; 
+    }
+
+
+}
+
+@media (max-width: 1350px){
+
+    header{
+        height: 75px;
+    }
+
+    
+
+    #botoes{
+        height: 45px;
+        max-width: 400px;
+        min-width: 300px;
+        margin: 35px 0px 0px 60px;
+    }
+    .botao{
+        width: 130px;
+        height: 45px;    
+        font-size: max(1.7em, 1.4vw);
+    }
+    
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+    
+    #pesquisa-div{
+        display: flex;
+        width: 500px;
+        height: 35px;
+        margin: 0px 0px 0px 30px;
+        font-family: Bebas Neue;
+    }
+
+    #pesquisa-div input{
+        width: 100%;
+        border-radius: 10px; 
+        font-size: 1em;
+        font-family: sans-serif;
+        color: rgb(65, 65, 65);
+        margin: 0px 10px 0px 0px;
+    }
+    
+    #confirmar{
+        font-size: 1.5em;
+    }
+
+    main{
+        align-items: center;
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }   
+    
+    #catalogo{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 150px;
+        row-gap: 100px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        justify-content: space-evenly;
+    }
+
+    #select-categoria{
+        width: 900px;
+    }
+    
+    .item{
+        height: 380px;
+        width: 240px;
+        padding: 4.5px;
+    }
+
+    .item img{ 
+        height: 240px;
+        width: 240px;
+    }
+
+    .nome-produto{
+        width: 240px;
+        font: bold 1em sans-serif;
+    }
+
+
+    .preco-produto-vista{
+        width: 240px;
+        font: bold 1.3em sans-serif; 
+    }
+
+    .preco-produto-parcela{
+        width: 240px;
+        font: bold 1em sans-serif; 
+    }
+
+}
+
+
+@media (max-width: 1040px){
+
+
+    header{
+        height: 70px;
+    }
+
+    .slide img{
+        height: 285px;
+    }
+
+    .slider{
+        height: 415px;
+    }
+
+    .navigation-auto{
+        margin-top: 262px;
+    }
+
+    
+
+    #botoes{
+        height: 40px;
+        margin: 30px 0px 0px 30px;
+    }
+    .botao{
+        width: 100px;
+        height: 40px;    
+        font-size: max(1.4em, 1.4vw);
+    }
+    
+    #logo{
+        display: none;
+    }
+    
+    #pesquisa-div{
+        margin: 0px;
+        width: 50%;
+        height: 30px;
+    }
+
+    #pesquisa-div input{
+        width: 100%;
+        border-radius: 10px; 
+        font-size: 1em;
+        font-family: sans-serif;
+        color: rgb(65, 65, 65);
+        margin: 0px 10px 0px 0px;
+    }
+    
+    #confirmar{
+        display: none;
+    }
+
+    main{
+        align-items: center;
+        width: 90%;
+    }   
+    
+    #catalogo{
+        justify-content: space-evenly;
+        column-gap: 100px;
+        row-gap: 150px; 
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    #select-categoria{
+        width: 90%;
+    }
+    
+    .item{
+        height: 380px;
+        width: 270px;
+        padding: 4.5px;
+    }
+
+    .item img{ 
+        height: 270px;
+        width: 270px;
+    }
+
+    .nome-produto{
+        width: 270px;
+        font: bold 1.1em sans-serif;
+    }
+
+
+    .preco-produto-vista{
+        width: 270px;
+        font: bold 1.3em sans-serif; 
+    }
+
+    .preco-produto-parcela{
+        width: 270px;
+        font: bold 1.1em sans-serif; 
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .slide img{
+        height: 250px;
+    }
+
+    .slider{
+        height: 370px;
+    }
+
+    .navigation-auto{
+        margin-top: 226px;
+    }
+
+    #menu-botoes{
+        display: flex;
+    }
+
+    #botoes{
+        display: none;
+    }
+    
+    main{
+        align-items: center;
+        width: 90%;
+    }
+    
+    #catalogo{
+        justify-content: space-evenly;
+        row-gap: 150px;
+        column-gap: 200px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    #select-categoria{
+        width: 90%;
+        min-width: 400px;
+    }
+    
+    #pesquisa-div{
+        width: 50%;
+    }
+
+    #logo{
+        display: block;
+        margin-left: -15%;
+    }
+}
+
+
+@media (max-width: 425px){
+    header{
+        position: relative;
+        justify-content: space-around;
+        height: 110px;
+    }
+
+    .slider{
+        height: 300px;
+    }
+
+    .slide img{
+        height: 190px;
+    }
+
+    .navigation-auto{
+        margin-top: 170px;
+    }
+
+    #menu-botoes{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+
+    #pesquisa-div{
+        width: 90%;
+        position: absolute;
+        bottom: 20px;
+        display: block;
+    }
+
+    #pesquisa-div input{
+        height: 35px;
+        border-radius: 0%;
+
+    }
+
+    #confirmar{
+        display: block;
+    }
+
+
+    #logo{
+        position: absolute;
+        top: 10%;
+        right: 45%;
+        display: block;
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        background-image: url('../imagens/logo/TechFinder-short.png');
+    }
+
+    #select-categoria{
+        margin-top: 10%;
+    }
+        
+    .item{
+        height: 380px;
+        width: 230px;
+        padding: 4.5px;
+    }
+
+    .item img{ 
+        height: 270px;
+        width: 230px;
+    }
+
+    .nome-produto{
+        width: 230px;
+        font: bold 1em sans-serif;
+    }
+
+
+    .preco-produto-vista{
+        width: 230px;
+        font: bold 1.1em sans-serif; 
+    }
+
+    .preco-produto-parcela{
+        width: 240px;
+        font: bold 0.8em sans-serif; 
+    }
+
+}
